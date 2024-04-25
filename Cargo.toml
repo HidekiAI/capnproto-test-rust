@@ -1,0 +1,11 @@
+[package]
+name = "capnproto-test-rust"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[build-dependencies]
+capnpc = "0.14"
+
+[dependencies]
+capnp = { version = "0.19.3", features = ["quickcheck"] }
